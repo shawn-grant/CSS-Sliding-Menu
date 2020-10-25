@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>CSS Side Nav</title>
+        <link rel="stylesheet" href="navbar.css">
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+            crossorigin="anonymous"
+            />
+    </head>
+    <body>
+        <!--This checkbox controls the visible state of the navbar. it is not displayed, only used as a toggle-->
+        <input type="checkbox" name="nav" id="nav_button">
+
+        <div class="body">
+            <!--Hamburger Button. remains on all pages-->
+            <div class="navbar">
+                <label for="nav_button" class="open_nav">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </label>
+            </div>
+
+            <!--Home Page-->
+            <div id="home-page" class="page">
+                <br>
+                <h1>Welcome Home!</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <!-- 	br tag to check scrolling -->
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+
+            <div id="about-page" class="page">
+                <br>
+                <h1>About US!</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <!-- 	br tag to check scrolling -->
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+
+            <div id="contact-page" class="page">
+                <iframe width="100%" height="100%" src="https://studybank.web.app" frameborder="0"></iframe>
+            </div>
+            
+        </div>
+
+        <div class="side_nav">
+            <br>
+            <label for="nav_button" class="close_nav">&Cross;</label>
+            <br>
+            <br>
+            <label for="nav_button" class="nav_link" onclick="openPage('home-page')">Home</label>
+            <label for="nav_button" class="nav_link" onclick="openPage('about-page')">About</label>
+            <label for="nav_button" class="nav_link" onclick="openPage('contact-page')">Contact</label>
+        </div>
+        <script src="navigation.js"></script>
+    </body>
+</html>
